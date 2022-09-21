@@ -1,0 +1,16 @@
+﻿<Window x:Class="Bioskop.Forme.FrmZanrFilma"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni zanr filma" Height="200" Width="400" WindowStartupLocation="CenterScreen" Background="#FFED5000" >
+    <Grid>
+        <Label x:Name="lblNazivZanra" Content="Naziv zanra : " HorizontalAlignment="Left" Margin="65,45,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="txtNazivZanra" HorizontalAlignment="Left" Margin="180,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txtNazivZanra_TextChanged"/>
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="95,110,0,0" VerticalAlignment="Top" Height="30" Width="60" Click="btnSacuvaj_Click" Background="#FFED5000" Foreground="White" BorderBrush="White"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="215,110,0,0" VerticalAlignment="Top"  Height="30" Width="60" Click="btnOtkazi_Click" Background="#FFED5000" Foreground="White" BorderBrush="White"/>
+
+    </Grid>
+</Window>

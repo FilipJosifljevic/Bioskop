@@ -1,0 +1,23 @@
+﻿<Window x:Class="Bioskop.Forme.FrmFilm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni film" Height="450" Width="400" WindowStartupLocation="CenterScreen" Background="#FFED5000">
+    <Grid>
+        <Label x:Name="lblNaziv" Content="Naziv : " HorizontalAlignment="Left" Margin="65,65,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="txtNaziv" HorizontalAlignment="Left" Margin="190,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <Label x:Name="lblGodina" Content="Godina izlaska : " HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <DatePicker x:Name="dpGodina" HorizontalAlignment="Left" Margin="190,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblZanr" Content="Zanr : " HorizontalAlignment="Left" Margin="65,175,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="lblReditelj" Content="Reditelj : " HorizontalAlignment="Left" Margin="65,230,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <ComboBox x:Name="cbxZanr" HorizontalAlignment="Left" Margin="190,175,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="NazivZanra" SelectedValuePath="ZanrID"/>
+        <ComboBox x:Name="cbxReditelj" HorizontalAlignment="Left" Margin="190,230,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Ime i prezime" SelectedValuePath="RediteljID"/>
+        <Label x:Name="lblRepertoarID" Content="Repertoar ID : " HorizontalAlignment="Left" Margin="65,285,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <ComboBox x:Name="cbxRepertoarID" HorizontalAlignment="Left" Margin="190,285,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="RepertoarID" SelectedValuePath="RepertoarID"/>
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="95,365,0,0" VerticalAlignment="Top" Height="30" Width="60" Click="btnSacuvaj_Click" Background="#FFED5000" Foreground="White" BorderBrush="White"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="215,365,0,0" VerticalAlignment="Top"  Height="30" Width="60" Click="btnOtkazi_Click" Background="#FFED5000" Foreground="White" BorderBrush="White"/>
+    </Grid>
+</Window>

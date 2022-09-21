@@ -1,0 +1,21 @@
+﻿<Window x:Class="Bioskop.Forme.FrmKarta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni kartu" Height="380" Width="400" WindowStartupLocation="CenterScreen" Background="#FFED5000">
+    <Grid>
+        <Label x:Name="lblCena" Content="Cena : " HorizontalAlignment="Left" Margin="65,65,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <TextBox x:Name="txtCena" HorizontalAlignment="Left" Margin="190,70,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="txtCena_TextChanged"/>
+        <Label x:Name="lblDatumProjekcija" Content="Datum projekcije : " HorizontalAlignment="Left" Margin="65,120,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <DatePicker x:Name="dpDatumProjekcije" HorizontalAlignment="Left" Margin="190,120,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblTransakcijaID" Content="Transakcija ID : " HorizontalAlignment="Left" Margin="65,175,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Label x:Name="lblFilm" Content="Film : " HorizontalAlignment="Left" Margin="65,230,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <ComboBox x:Name="cbxTransakcijaID" HorizontalAlignment="Left" Margin="190,175,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="TransakcijaID" SelectedValuePath="TransakcijaID"/>
+        <ComboBox x:Name="cbxFilm" HorizontalAlignment="Left" Margin="190,230,0,0" VerticalAlignment="Top" Width="120" DisplayMemberPath="Naziv" SelectedValuePath="FilmID"/>
+        <Button x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="95,295,0,0" VerticalAlignment="Top" Height="30" Width="60" Click="btnSacuvaj_Click" Background="#FFED5000" Foreground="White" BorderBrush="White"/>
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="215,295,0,0" VerticalAlignment="Top"  Height="30" Width="60" Click="btnOtkazi_Click" Background="#FFED5000" Foreground="White" BorderBrush="White"/>
+    </Grid>
+</Window>

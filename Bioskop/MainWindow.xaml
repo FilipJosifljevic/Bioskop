@@ -1,0 +1,29 @@
+﻿<Window x:Class="Bioskop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bioskop"
+        mc:Ignorable="d"
+        Title="Bioskop" Height="500" Width="800" WindowStartupLocation="CenterScreen" Background="#FFED5000">
+    <Grid HorizontalAlignment="Right" Width="800">
+        <Button x:Name="btnRadnikBlagajne" Content="Radnik blagajne" HorizontalAlignment="Left" Margin="550,40,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnRadnikBlagajne_Click"/>
+        <Button x:Name="btnKupac" Content="Kupac" HorizontalAlignment="Left" Margin="680,40,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnKupac_Click"/>
+        <Button x:Name="btnTransakcija" Content="Transakcija" HorizontalAlignment="Left" Margin="550,100,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnTransakcija_Click"/>
+        <Button x:Name="btnKarta" Content="Karta" HorizontalAlignment="Left" Margin="680,100,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnKarta_Click"/>
+        <Button x:Name="btnFilm" Content="Film" HorizontalAlignment="Left" Margin="550,160,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnFilm_Click"/>
+        <Button x:Name="btnReditelj" Content="Reditelj" HorizontalAlignment="Left" Margin="680,160,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnReditelj_Click"/>
+        <Button x:Name="btnZanrFilma" Content="Zanr filma" HorizontalAlignment="Left" Margin="550,220,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnZanrFilma_Click"/>
+        <Button x:Name="btnRepertoar" Content="Repertoar" HorizontalAlignment="Left" Margin="680,220,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnRepertoar_Click"/>
+        <Button x:Name="btnAdmin" Content="Admin" HorizontalAlignment="Left" Margin="615,280,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnAdmin_Click"/>
+        <Button x:Name="btnDodaj" Content="Dodaj" HorizontalAlignment="Left" Margin="100,40,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnDodaj_Click" />
+        <Button x:Name="btnIzmeni" Content="Izmeni" HorizontalAlignment="Left" Margin="210,40,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnIzmeni_Click" />
+        <Button x:Name="btnObrisi" Content="Obrisi" HorizontalAlignment="Left" Margin="320,40,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnObrisi_Click" />
+
+        <DataGrid x:Name="dataGridLevo" HorizontalAlignment="Left" VerticalAlignment="Center" Width="auto" Height="auto" IsReadOnly="True" AlternatingRowBackground="DarkOrange" CanUserAddRows="False" SelectionMode="Single" SelectionUnit="FullRow" Margin="100,0,0,0"/>
+        <Button x:Name="btnLogIn" Content="Log In" HorizontalAlignment="Left" Margin="550,397,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnLogIn_Click"/>
+        <Button x:Name="btnLogOut" Content="Log Out" HorizontalAlignment="Left" Margin="680,397,0,0" VerticalAlignment="Top" Height="38" Width="88" BorderBrush="#FFFAFAFA" Background="#FFED5600" Foreground="#FFFAFAFA" Click="btnLogOut_Click"/>
+        <Label x:Name="lblLogovanje" Content="" Margin="118,420,153,0" VerticalAlignment="Top" HorizontalAlignment="Left" Foreground="White"/>
+
+    </Grid>
+</Window>
